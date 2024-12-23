@@ -117,7 +117,7 @@ public class Kasir extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Nama Produk", "QTY", "Harga"
+                "ID", "PRODUK", "QTY", "HARGA"
             }
         ));
         tblcart.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
