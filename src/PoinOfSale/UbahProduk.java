@@ -128,14 +128,14 @@ public class UbahProduk extends javax.swing.JDialog {
             }
         });
 
-        cmb_kategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmb_kategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
         cmb_kategori.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmb_kategoriActionPerformed(evt);
             }
         });
 
-        cmb_supplier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmb_supplier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
 
         jButton2.setText("SIMPAN");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -305,6 +305,7 @@ public class UbahProduk extends javax.swing.JDialog {
             PS.setInt(8, getIp());
             PS.executeUpdate();
             
+            JOptionPane.showMessageDialog(null, "Data produk berhasil diperbarui!");
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Invalid input. Please enter valid numbers.");

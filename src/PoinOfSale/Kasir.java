@@ -117,9 +117,14 @@ public class Kasir extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Nama Produk", "QTY", "Title 4"
+                "ID", "Nama Produk", "QTY", "Harga"
             }
         ));
+        tblcart.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                tblcartPropertyChange(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblcart);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -481,6 +486,10 @@ public class Kasir extends javax.swing.JFrame {
 //        N.setMODEL( (DefaultTableModel) tblcart.getModel()); 
 //        N.setVisible(true); 
     }//GEN-LAST:event_btlCheckoutActionPerformed
+
+    private void tblcartPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_tblcartPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tblcartPropertyChange
 
     /**
      * @param args the command line arguments
